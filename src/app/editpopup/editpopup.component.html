@@ -1,0 +1,16 @@
+
+<h1 mat-dialog-title>Edit Data</h1>
+<div mat-dialog-content>
+  <div *ngFor="let keyValuePair of editData | keyvalue">
+    <h2>{{ keyValuePair.key }}:</h2>
+
+    <input *ngIf="isEditable(keyValuePair.key)" [(ngModel)]="editData[keyValuePair.key]">
+    <span *ngIf="!isEditable(keyValuePair.key)">{{ keyValuePair.value }}</span>
+  
+
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onclickUpdate()">Save</button>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

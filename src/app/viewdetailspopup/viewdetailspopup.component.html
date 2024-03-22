@@ -1,0 +1,7 @@
+
+<h1 mat-dialog-title>Registration Details</h1>
+<div mat-dialog-content>
+  <div *ngFor="let keyValuePair of detailsData | keyvalue">
+    <p>{{ keyValuePair.key }}: {{ keyValuePair.value }}</p>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="min-w-screen
+min-h-screen
+bg-gradient-to-t
+from-purple-400
+to-purple-600
+items-center
+justify-center
+px-5
+py-5
+">
+    <div class="w-full
+    mx-auto
+    rounded-xl
+    bg-gray-500
+    shadow-xl
+    text-green-200
+    relative
+    overflow-hidden" style="max-width: 350px;">
+      <form [formGroup]='form' (ngSubmit) = onLogin()>
+        <div class=" form-group,
+         min-w-full
+         bg-gradient-to-b
+         from-gray-800
+         to-gray-600
+         h-206
+         align-middle
+         justify-center
+         p-10
+         text-xl ">
+         <h1 class="text-center text-3xl font-bold pt-5">Login Form</h1><br>
+            <input type="text" class="h-8 w-60
+            appearance-none bg-transparent border-b
+            focus:outline-none"
+            placeholder="Email"
+            formControlName="username"><br><br>
+
+            <input type="password" class="h-8 w-60
+            appearance-none bg-transparent border-b
+            focus:outline-none"placeholder="Password"
+            formControlName="password"><br><br>
+
+           
+            <button class="bg-violet-600 text-2xl
+             text-white w-56  rounded-xl text-center
+             flex justify-center m-auto">Login</button><br>
+             <h3 class="text-center">Already have an account? <a><u>Register</u></a> </h3>
+             
+        </div>
+    </form>  
+    </div>
+    
+</div>

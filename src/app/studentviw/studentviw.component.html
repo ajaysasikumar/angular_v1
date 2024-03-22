@@ -1,0 +1,38 @@
+
+<app-usernav></app-usernav>
+<div class="
+min-h-lvh
+min-w-screen
+bg-green-600
+overflow-y-hidden">
+    
+        <div class="w-3/5 mx-auto mt-20">
+            <table class="w-full border-collapse text-center">
+                <thead>
+                  <tr>
+                    <th class="w-1/5 border border-black px-4 py-2">Id</th>
+                    <th class="w-1/5 border border-black px-4 py-2">Name</th>
+                    <th class="w-1/5 border border-black px-4 py-2">Class</th>
+                    <th class="w-2/5 border border-black px-4 py-2">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let row of userData;let i = index;">
+                    <td class="w-1/5 border border-black px-4 py-2">{{ row.email }}</td>
+                    <td class="w-1/5 border border-black px-4 py-2">{{ row.username }}</td>
+                    <td class="w-1/5 border border-black px-4 py-2">{{ row.class }}</td>
+                    <td class="w-2/5 border border-black px-4 py-2">
+                        <button class="bg-violet-600 text-1xl text-white w-16 text-center" style="margin-left: 10px;" (click)="openDialog(row.email)">View</button>
+                        <button class="bg-violet-600 text-1xl text-white w-16 text-center" style="margin-left: 10px;" (click)="ondel(row.email)">Delete</button>
+                    </td>
+                    
+                  </tr>
+                  
+                </tbody>
+              </table>
+              
+        </div>
+</div>
+
+
+

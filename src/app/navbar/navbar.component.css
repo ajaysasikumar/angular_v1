@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.container button{
+    margin-left: auto;
+    margin: 10px;
+}
